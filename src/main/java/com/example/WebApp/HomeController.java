@@ -22,4 +22,9 @@ public class HomeController {
 	public @ResponseBody String greetingBD() {
 	return "Olá, Bom dia para você!";
 	}
+	
+	@RequestMapping("/BoaTarde")
+	public @ResponseBody String greetingBT() {
+	return "Olá, Boa Tarde para você!";
+	}
 }
