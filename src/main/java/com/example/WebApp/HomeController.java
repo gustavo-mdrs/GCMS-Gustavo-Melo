@@ -33,4 +33,9 @@ public class HomeController {
 	public @ResponseBody String greetingBN() {
 	return "Olá, Boa Noite para você!";
 	}
+
+	@RequestMapping("/hotfix")
+	public @ResponseBody String greetingHotfix() {
+	return "Isso é um hotfix!";
+	}
 }
