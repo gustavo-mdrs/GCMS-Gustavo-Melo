@@ -28,9 +28,13 @@ class WebAppApplicationTests {
 
 	@Test
 	public void checkGustavo() throws Exception {
-
 		this.mockMvc.perform(get("/Gustavo")).andDo(print()).andExpect(status().isOk())
 				.andExpect(content().string(containsString("Olá, Gustavo Medeiros!")));
+	}
 
+	@Test
+	public void checkHotfix() throws Exception {
+		this.mockMvc.perform(get("/hotfix")).andDo(print()).andExpect(status().isOk())
+				.andExpect(content().string(containsString("Isso é um hotfix!")));
 	}
 }
