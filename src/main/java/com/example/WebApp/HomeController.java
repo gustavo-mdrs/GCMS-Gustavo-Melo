@@ -38,4 +38,9 @@ public class HomeController {
 	public @ResponseBody String greetingHotfix() {
 	return "Isso é um hotfix!";
 	}
+	
+	@RequestMapping("/fim")
+	public @ResponseBody String greetingFim() {
+	return "Aqui é o fim de tudo!";
+	}
 }
