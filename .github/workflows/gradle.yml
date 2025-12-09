@@ -15,8 +15,10 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
+    container:
+      image: docker://gustavomdrs/gcms-repo:imagem-docker
+      
     permissions:
       contents: read
 
